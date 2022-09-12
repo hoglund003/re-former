@@ -1,12 +1,13 @@
-<form action="/create" method="POST" accept-charset="UTF-8" >
+<form action="/users" method="POST" accept-charset="UTF-8" >
+  <%= hidden_field_tag "authenticity_token", form_authenticity_token %>
   <label for="username">Username:</label>
-  <input type="text">
+  <input type="text" name="username">
 
   <label for="email">Email:</label>
-  <input type="eamil">
+  <input type="email" name="email">
 
   <label for="password">Password:</label>
-  <input type="passowrd">
+  <input type="password" name="password">
 
   <input type="submit" value="Create">
 </form>
